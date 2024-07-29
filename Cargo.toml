@@ -1,0 +1,16 @@
+[package]
+name = "pgevdb"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+anyhow = "1.0.86"
+postgresql_embedded = "0.14.2"
+rand = "0.8.5"
+reqwest = "0.12.5"
+semver = "1.0.23"
+sqlx = {version = "0.8.0", default-features = true, features = ["postgres", "runtime-tokio"] }
+tokio = { version = "1.39.1", features = ["full"] }
+tracing = "0.1.40"
+tracing-subscriber = "0.3.18"
+zip-extract = {version = "0.1.3"}
